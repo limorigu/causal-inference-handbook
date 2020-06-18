@@ -11,7 +11,7 @@ This is meant to be a resource for causal-curious folks who are looking for acce
 
 ![The ultimate question](https://github.com/limorigu/causal-inf-handbook/blob/master/img/Chick-and-Egg.jpg)
 
-Table of content
+The Causal Dictionary
 ===============
 1. **Common Terms (Terminology)**
     1. _G-something_
@@ -62,15 +62,17 @@ Table of content
               1. e.g. http://marcfbellemare.com/wordpress/12869
           2. http://causality.cs.ucla.edu/blog/index.php/2014/11/09/causal-inference-without-graphs/
           
-2. [**Jobs and Opportunities**](https://github.com/limorigu/causal-inf-handbook/blob/master/Jobs-and-Opportunities/Jobs-and-Opportunities.md)
+Community and Recommendations
+===============
+1. [**Jobs and Opportunities**](https://github.com/limorigu/causal-inf-handbook/blob/master/Jobs-and-Opportunities/Jobs-and-Opportunities.md)
     1. _Industry_
     2. _Academia_
         1. Quantum Causal Inference, see UAI mailer
         
-3. **Software**
+2. **Software**
     1. _Packages etc._
     
-4. **Suggested readings**
+3. **Suggested readings**
     1. _Textbooks_
     2. _Twitter/Blogs_
         1. https://github.com/tomron/awesome-causalinference
