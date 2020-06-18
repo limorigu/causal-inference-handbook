@@ -4,7 +4,9 @@ This page serves as a collection of opportunities both in academia and industry 
 
 ## Doctoral
 
-In general, applying for a PhD is complex endavour, but the primariy goal should be to identify groups around the world that align with your interests. The fact that you are looking for PhDs in the area of causal inference indicates that you are already on the right path. While it is highly recommended that you do your own research into what groups and people are out there, here is a list of people that tend to take on PhDs with a focus on causal inference, and are worth contacting. Note: Do your homework and get to know their research first. This saves time for both sides: You will know whether you are a match and they will be able to hold an informed reserach discussion with you.
+In general, applying for a PhD is a complex endavour, but your primary goal should be to identify groups around the world that align with your interests. The fact that you are looking for PhDs in the area of causal inference indicates that you are already on the right path. While it is highly recommended that you do your own research into what groups and people are out there, here is a list of people that tend to take on PhDs with a focus on causal inference, and are worth contacting. 
+
+*Note: Do your homework and get to know their research first. This saves time for both sides: You will know whether you are a match and they will be able to hold an informed reserach discussion with you.*
 
 ### Potential Outcome-like
 - Berkeley Statistics Department: Mark van der Laan
@@ -14,7 +16,7 @@ In general, applying for a PhD is complex endavour, but the primariy goal should
 
 ### Graphical Model-like
 - UCLA: Judea Pearl
-- Columbia University: Elias Bareinboim
+- Columbia University: Elias Bareinboim, David Blei, Michael Sobel
 - Copenhagen University: Jonas Peters
 - Max-Planck Institute Tübingen: Bernhard Schölkopf and co.
 - Amsterdam University: Joris Mooij
