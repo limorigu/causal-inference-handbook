@@ -13,14 +13,17 @@ This is meant to be a resource for causal-curious folks who are looking for acce
 
 Table of content
 ===============
-1. **Commonly used terms (Terminology)**
+1. **Common Terms (Terminology)**
     1. _G-something_
         1. G-estimation
         2. G-formula
         3. G-Identifiably
         4. G-etc.
-    2. _Causal Discovery versus Causal Effect Estimation_
-    3. _Assumptions_
+        
+2. **Causal Discovery versus Causal Effect Estimation**
+    1. What do they do?
+    
+3. **Common Assumptions**
         1. [x] [Positivity](Common_terms/Assumptions/Positivity.md)
             1. Overlap
         2. SUTVA
@@ -31,14 +34,14 @@ Table of content
             2. No-unmeasured confounding
      4. _Selection Bias/Confounding_
          1. [x] [Propensity score and matching](Common_terms/Propensity.md)
-     5. _Causal Effects_
-         1. CATE
-         2. HTE
-         3. ITE
-     6. _Potential Outcomes vs. Graphical Models_
+4. **Causal Effects**
+     1. CATE
+     2. HTE
+     3. ITE
+5. **Potential Outcomes vs. Graphical Models**
      7. _Other types of causality_
          1. Granger causality, Causal Impact, etc.
-     8. _Identifiability_
+6. **Identifiability**
          1. What does it mean?
          2. How is it used differently?
          3. Does it always refer to causal parameters/claims or sometimes as well to “normal parameters”?
@@ -48,7 +51,7 @@ Table of content
              1. [x] [2 step regression/IV regression](Common_terms/Doubly_robust.md)
          3. Negative controls
          4. Method of Moments (moment matching?)
-     9. _Philosophy of Causality_
+7. **Philosophy of Causality**
          1. Nancy Cartwright
              1. Hunting Causes
          2. Refer to Stanford Encyclopedia
@@ -70,6 +73,7 @@ Table of content
 
 
 # How to contribute
+
 To be determined, requires the repo to be public.
 Suggested methods:
 - pull requests
@@ -78,6 +82,6 @@ Suggested methods:
 
 
 # Credit
-The Causal Inference Handbook is joint effort by these [contributors](https://github.com/limorigu/causal-inf-handbook/graphs/contributors)
+The Causal Inference Handbook is a joint effort by these [contributors](https://github.com/limorigu/causal-inf-handbook/graphs/contributors)
 
 
