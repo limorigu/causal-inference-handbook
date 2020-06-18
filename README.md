@@ -1,6 +1,6 @@
 Causal Inference Handbook
 ============================
-A friendly introduction to causal inference
+*A friendly introduction to causal inference*
 
 <!-- # How to read
 Head over to the [Wiki section](https://github.com/limorigu/causal-inf-handbook/wiki) for all entires on fundamentals of causal inference! -->
@@ -56,7 +56,7 @@ Table of content
           1. http://marcfbellemare.com/wordpress/metrics-mondays
               1. e.g. http://marcfbellemare.com/wordpress/12869
           2. http://causality.cs.ucla.edu/blog/index.php/2014/11/09/causal-inference-without-graphs/
-2. **Jobs** 
+2. [**Jobs and Opportunities**](https://github.com/limorigu/causal-inf-handbook/blob/master/Jobs-and-Opportunities/Jobs-and-Opportunities.md)
     1. _Industry_
     2. _Academia_
         1. Quantum Causal Inference, see UAI mailer
