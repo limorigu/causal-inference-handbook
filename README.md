@@ -21,16 +21,16 @@ Table of content
         4. G-etc.
     2. _Causal Discovery versus Causal Effect Estimation_
     3. _Assumptions_
-        1. [x] [Positivity](Positivity)
+        1. [x] [Positivity](Common_terms/Assumptions/Positivity)
             1. Overlap
         2. SUTVA
         3. Consistency
-            1. [x] [Compliance (not sure if it’s here)](Compliance)
+            1. [x] [Compliance (not sure if it’s here)](Common_terms/Assumptions/Compliance)
         4. Exchangeability
             1. Ignorability (weak and strong)
             2. No-unmeasured confounding
      4. _Selection Bias/Confounding_
-         1. [x] [Propensity score and matching](Propensity)
+         1. [x] [Propensity score and matching](Common_terms/Propensity)
      5. _Causal Effects_
          1. CATE
          2. HTE
@@ -45,7 +45,7 @@ Table of content
      9. _Common methods_
          1. Diffs in Diffs
          2. Doubly robust methods
-             1. [x] [2 step regression/IV regression](Doubly_robust)
+             1. [x] [2 step regression/IV regression](Common_terms/Doubly_robust)
          3. Negative controls
          4. Method of Moments (moment matching?)
      9. _Philosophy of Causality_
