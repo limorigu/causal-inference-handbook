@@ -5,7 +5,7 @@ Causal Inference Handbook
 <!-- # How to read
 Head over to the [Wiki section](https://github.com/limorigu/causal-inf-handbook/wiki) for all entires on fundamentals of causal inference! -->
 
-Welcome to the causal inference handbook wiki!
+## Welcome to the causal inference handbook wiki!
 
 This is meant to be a resource for causal-curious folks who are looking for accessible introduction to common topics in causal inference. 
 
