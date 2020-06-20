@@ -45,7 +45,7 @@ The Causal Dictionary
      3. Does it always refer to causal parameters/claims or sometimes as well to “normal parameters”?
      4. Challenges to identifiability: sources of bias
         1. Confounding
-        2. (Sample) Selection Bias
+        2. [(Sample) Selection Bias](Common_terms/Identifiability/Bias/Selection_bias.md)
      5. Common methods for identification
          1. Diffs in Diffs
          2. Doubly robust methods
