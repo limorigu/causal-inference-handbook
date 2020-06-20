@@ -32,28 +32,33 @@ The Causal Dictionary
     5. Exchangeability
         1. Ignorability (weak and strong)
         2. No-unmeasured confounding
-     4. Selection Bias/Confounding
-        1. [Propensity score and matching](Common_terms/Propensity.md)
 4. **Causal Effects**
      1. CATE
      2. HTE
      3. ITE
 5. **Potential Outcomes vs. Graphical Models**
-     1. _Other types of causality_
+     1. Other types of causality
          1. Granger causality, Causal Impact, etc.
 6. **Identifiability**
      1. What does it mean?
      2. How is it used differently?
      3. Does it always refer to causal parameters/claims or sometimes as well to “normal parameters”?
-     
-     4. Common methods for identification
+     4. Challenges to identifiability: sources of bias
+        1. Confounding
+        2. (Sample) Selection Bias
+     5. Common methods for identification
          1. Diffs in Diffs
          2. Doubly robust methods
              1. [x] [2 step regression/IV regression](Common_terms/Doubly_robust.md)
          3. Negative controls
          4. Method of Moments (moment matching?)
+         5. [Propensity score and matching](Common_terms/Propensity.md)
+         6. Do-calculus
+            1. Badkoor criterion + adjustment
+            2. Frontdoor criterion + adjustment
+7. **Counterfactuals**
          
-7. **Philosophy of Causality**
+8. **Philosophy of Causality**
       1. Nancy Cartwright
          1. Hunting Causes
          2. Refer to Stanford Encyclopedia
