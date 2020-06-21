@@ -24,7 +24,7 @@ The Causal Dictionary
     1. What do they do?
     
 3. **Common Assumptions**
-    1. [x] [Positivity](Common_terms/Assumptions/Positivity.md)
+    1. [Positivity](Common_terms/Assumptions/Positivity.md)
         1. Overlap
     2. SUTVA
     3. Consistency
@@ -47,13 +47,14 @@ The Causal Dictionary
         1. Confounding
         2. [(Sample) Selection Bias](Common_terms/Identifiability/Bias/Selection_bias.md)
      5. Common methods for identification
-         1. Diffs in Diffs
-         2. Doubly robust methods
-             1. [x] [2 step regression/IV regression](Common_terms/Doubly_robust.md)
-         3. Negative controls
-         4. Method of Moments (moment matching?)
-         5. [Propensity score and matching](Common_terms/Propensity.md)
-         6. Do-calculus
+        1. [Instrumental variables (IVs)](Common_terms/Identifiability/IV.md)
+        2. Diffs in Diffs
+        3. Doubly robust methods
+            1. [2 step regression/IV regression](Common_terms/Identifiability/Doubly_robust.md)
+        4. Negative controls
+        5. Method of Moments (moment matching?)
+        6. [Propensity score and matching](Common_terms/Identifiability/Propensity.md)
+        7. Do-calculus
             1. Badkoor criterion + adjustment
             2. Frontdoor criterion + adjustment
 7. **Counterfactuals**
