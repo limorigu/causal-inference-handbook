@@ -12,7 +12,7 @@ There are many explanations and examples that could help elucidate IVs further, 
 
 The classic DAG to describe such a system would look like the one below.
 
-![IV DAG](img/IV.png)
+![IV DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/IV.png)
 
 Different definitions of instrument variables through slight different perspectives are offered, among many, by Pearl ([Causality 2nd edition](http://bayes.cs.ucla.edu/BOOK-2K/), ch.8, P. 274), Cholkopf, Janzing and Peters ([Elements of Causal Inference](https://mitpress.mit.edu/books/elements-causal-inference#:~:text=Elements%20of%20Causal%20Inference%20is,data%20to%20understand%20the%20world.), P. 176) and Hernan and Robins ([Causal Inference: What If](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/), Chapter 16, in particular technical point 16.1). 
 
