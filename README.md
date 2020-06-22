@@ -55,7 +55,7 @@ The Causal Dictionary
         5. Method of Moments (moment matching?)
         6. [Propensity score and matching](Common_terms/Identifiability/Propensity.md)
         7. Do-calculus
-            1. Badkoor criterion + adjustment
+            1. Backdoor criterion + adjustment
             2. Frontdoor criterion + adjustment
 7. **Counterfactuals**
          
