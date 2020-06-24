@@ -14,13 +14,14 @@ This is meant to be a resource for causal-curious folks who are looking for acce
 The Causal Dictionary
 ===============
 1. **Common Terms (Terminology)**
-    1. _G-something_
+    1. _G-something_ (Jakob has some notes to add, eventually)
         1. G-estimation
         2. G-formula
         3. G-Identifiably
         4. G-etc.
+    2. Simpson's Paradox (Jakob will add notes produced in CSG)
         
-2. **Causal Discovery versus Causal Effect Estimation**
+2. **Causal Discovery and Causal Effect Estimation**
     1. What do they do?
     
 3. **Common Assumptions**
@@ -28,6 +29,7 @@ The Causal Dictionary
         1. Overlap
     2. SUTVA
     3. Consistency
+        1. Differences in Potential Outcomes and Graphical Models
     4. [Compliance](Common_terms/Assumptions/Compliance.md)
     5. Exchangeability
         1. Ignorability (weak and strong)
@@ -67,6 +69,11 @@ The Causal Dictionary
           1. http://marcfbellemare.com/wordpress/metrics-mondays
               1. e.g. http://marcfbellemare.com/wordpress/12869
           2. http://causality.cs.ucla.edu/blog/index.php/2014/11/09/causal-inference-without-graphs/
+          
+ 9. **Other Topics**
+        *Everything else that does not fit into a section above (yet)*
+        1. Out of Distribution and Out of Sample
+        2. 
           
 Community and Recommendations
 ===============
