@@ -7,8 +7,8 @@ The backdoor criterion is a graphical criterion which allows one to check whethe
 
 The formal definition of the backdoor criterion states:
 > A set of variables Z satisfies the back-door criterion relative to an ordered pair of variables (Xi, Xj) in a DAG G if:
-(i) no node in Z is a descendant of Xi; and
-(ii) Z blocks every path between Xi and Xj that contains an arrow into Xi.
+>(i) no node in Z is a descendant of Xi; and
+>(ii) Z blocks every path between Xi and Xj that contains an arrow into Xi.
 > Similarly, if X and Y are two disjoint subsets of nodes in G, then Z is said to satisfy the back-door criterion relative to (X,Y) if is satisfies the criterion relative to any pair (Xi, Xj) such that Xi∈X and Xj∈Y.
 
 Condition (ii) gives the criterion its name: it is concerned with blocking paths which point at Xi. Since we are interested in the causal effect of X on Y, the notion of an arrow pointing at Xi can be visually thought of as a "backdoor", going "back" into Xi.
@@ -21,6 +21,10 @@ In this typical example, {X3, X4} would be a valid adjustment set, and so would 
 
 After identifying the adjustment set via the Backdoor criterion, we can simply use the following Backdoor Ajustment theorem to recover the causal effect of X on Y: 
 > If a set of variables Z satisfies the back-door citertion relative to (X,Y), then the causal effect of X on Y is identifiable and is given by the formula 
-P(y|do(x)) = \Sum_z P(y|x,z)P(z).
+>P(y|do(x)) = \Sum_z P(y|x,z)P(z).
 
 The backdoor criterion is one prototypical example of how to identify causal effects from observational data. However, it is a graphical criterion, i.e. it relies on knowledge of the underlying causal graph of the data generation process. The backdoor criterion might not always be immidiately applicable for a given graph, i.e. might not always find an adjustment set to deconfound a causal effect of interest. In such cases, the front-door criterion might still apply, or the use of additional covaraites (Intrumnetal variables, proxies) might be needed. A general framework for replacing causal quantities with observational ones is the do-calculus theorem.
+
+For more, see discussion in [Causality 2nd edition](http://bayes.cs.ucla.edu/BOOK-2K/), Section 3.3.1; [A Generalized Backdoor Criterion](https://arxiv.org/pdf/1307.5636.pdf) 
+
+For backdoor blocking with minimal knowledge of DAG, see [Differentiable Causal Backdoor Discovery](http://proceedings.mlr.press/v108/gultchin20a.html)
