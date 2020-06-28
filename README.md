@@ -57,6 +57,7 @@ The Causal Dictionary
         7. Do-calculus
             1. Backdoor criterion + adjustment
             2. Frontdoor criterion + adjustment
+        8. Proxy variables
 7. **Counterfactuals**
          
 8. **Philosophy of Causality**
