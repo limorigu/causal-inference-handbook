@@ -29,7 +29,7 @@ The Causal Dictionary
     2. SUTVA
     3. Consistency
     4. [Compliance](Common_terms/Assumptions/Compliance.md)
-    5. [Exchangeability](Common_terms/Exchangeability.md)
+    5. [Exchangeability](Common_terms/Assumptions/test.ipynb)
         1. Ignorability (weak and strong)
         2. No-unmeasured confounding
 4. **Causal Effects**
