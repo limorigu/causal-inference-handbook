@@ -38,6 +38,10 @@ The Causal Dictionary
      1. CATE
      2. HTE
      3. ITE
+     4. Measures
+        1. Risk difference
+        2. Odds risk
+        3. ... (see Hernan Book)
 5. **Potential Outcomes vs. Graphical Models**
      1. Other types of causality
          1. Granger causality, Causal Impact, etc.
