@@ -56,7 +56,7 @@ The Causal Dictionary
         6. [Propensity score and matching](Common_terms/Identifiability/Propensity.md)
         7. Do-calculus
             1. [Badkoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Backdoor.md)
-            2. Frontdoor criterion + adjustment
+            2. [Frontdoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Frontdoor.md)
 7. **Counterfactuals**
          
 8. **Philosophy of Causality**
