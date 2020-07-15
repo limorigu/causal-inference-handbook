@@ -83,16 +83,15 @@ Community and Recommendations
     2. _Twitter/Blogs_
         1. https://github.com/tomron/awesome-causalinference
 
-
-
 # How to contribute
 
-To be determined, requires the repo to be public.
-Suggested methods:
-- pull requests
-- raising issues
-- adding contributors
+A general format for an entry is encouraged to have the following structure:
+1. Motivation
+2. Definition
+3. Intuition (including examples and relation to other concepts)
+4. Further reading
 
+We aim for entries to provide a complete and concise introduction, with pointers to more elaborate sources.
 
 # Credit
 The Causal Inference Handbook is a joint effort by these [contributors](https://github.com/limorigu/causal-inf-handbook/graphs/contributors)
