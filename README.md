@@ -33,9 +33,10 @@ The Causal Dictionary
         1. Ignorability (weak and strong)
         2. No-unmeasured confounding
 4. **Causal Effects**
-     1. CATE
-     2. HTE
-     3. ITE
+     1. ATE 
+     2. CATE
+     3. HTE
+     4. ITE
 5. **Potential Outcomes vs. Graphical Models**
      1. Other types of causality
          1. Granger causality, Causal Impact, etc.
