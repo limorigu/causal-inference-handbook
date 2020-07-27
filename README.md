@@ -32,10 +32,11 @@ The Causal Dictionary
     5. Exchangeability
         1. Ignorability (weak and strong)
         2. No-unmeasured confounding
-4. **Causal Effects**
-     1. CATE
-     2. HTE
-     3. ITE
+4. [**Causal Effects**](Common_terms/Causal_Effects/Causal_Effects.md)
+     1. [ATE](Common_terms/Causal_Effects/ATE.md)
+     2. [CATE](Common_terms/Causal_Effects/CATE.md)
+     <!-- 3. HTE -->
+     3. [ITE](Common_terms/Causal_Effects/ITE.md)
 5. **Potential Outcomes vs. Graphical Models**
      1. Other types of causality
          1. Granger causality, Causal Impact, etc.
