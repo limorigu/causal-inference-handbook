@@ -1,9 +1,13 @@
 Backdoor criterion
 ======
 
-One of the main tools in the causal toolbox, where we attempt to draw causal conclusions (i.e. compute causal quantities such as ATE, CATE, etc.) from observational data, in the presence of confounding. A confounder would be covariate which affects both the treatment itself and the outcome simultenously, thus "obscuring" the signal we might want to measure. Such obscuring would imply P(Y|X) ≠ P(Y|do(X)), where the first term can be obtained from a simple regression of the observed Y\~X, while the second term is obtained in a randomized control trial, where the assignment of treatment X is randomized. In this short introducion, we would show however, that via the backdoor criteria we might still be able to recover P(Y|do(X)) from observational data, without relying on a randomized control trial (RCT).
+### Motivation
 
-The backdoor criterion is a graphical criterion which allows one to check whether there are any open, backdoor paths between X (some treatment of interest, e.g. taking a drug) to Y (some outcome of interest, e.g. survival). In a sense, what the criterion is checking is whether confounding exists between X and Y, which could bias the estimation of causal effect when considering the simple observational P(Y|X); in the case of no confounding, the causal P(Y|do(X)) = P(Y|X); if confounding does exist, we will have to look for a valid adjustment set which could block the backdoor path from X to Y (blocking is defined via d-separation).
+One of the main tools in the causal toolbox, where we attempt to draw causal conclusions (i.e. compute causal quantities such as ATE, CATE, etc.) from observational data, in the presence of ![confounding](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Identifiability/Bias/Confounding.md). A confounder would be covariate which affects both the treatment itself and the outcome simultenously, thus "obscuring" the signal we might want to measure. Such obscuring would imply P(Y|X) ≠ P(Y|do(X)). The LHS can be obtained from a simple regression (of the observed)Y\~X; the RHS is obtained in controlled experiments where we can set X to a certain value and observe the subsequent values of Y. In this short introduction, we would show however, that via the backdoor criterion we might still be able to recover P(Y|do(X)) from observational data, without relying on a randomized control trial (RCT) or an otherwise controlled experiment.
+
+The backdoor criterion is a graphical criterion which allows one to check whether there are any open, backdoor paths between X (some treatment of interest, e.g. taking a drug) to Y (some outcome of interest, e.g. survival). In a sense, what the criterion is checking is whether confounding exists between X and Y, which could bias the estimation of causal effect when considering the simple observational P(Y|X); in the case of no confounding, the causal P(Y|do(X)) = P(Y|X); if confounding does exist, we will have to look for a valid adjustment set which could block the backdoor path from X to Y (blocking is defined via ![d-separation](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Do-Calculus/d-separation.md)).
+
+### Definition
 
 The formal definition of the backdoor criterion states:
 > A set of variables Z satisfies the back-door criterion relative to an ordered pair of variables (Xi, Xj) in a DAG G if:
@@ -12,6 +16,8 @@ The formal definition of the backdoor criterion states:
 > Similarly, if X and Y are two disjoint subsets of nodes in G, then Z is said to satisfy the back-door criterion relative to (X,Y) if is satisfies the criterion relative to any pair (Xi, Xj) such that Xi∈X and Xj∈Y.
 
 Condition (ii) gives the criterion its name: it is concerned with blocking paths which point at Xi. Since we are interested in the causal effect of X on Y, the notion of an arrow pointing at Xi can be visually thought of as a "backdoor", going "back" into Xi.
+
+### Example and Intuition
 
 Being a graphical criterion, it is most easily understood alongside a graphical, visual representation. A common toy example that shows the applicability of the criterion is the following. 
 
@@ -23,7 +29,9 @@ After identifying the adjustment set via the Backdoor criterion, we can simply u
 > If a set of variables Z satisfies the back-door citertion relative to (X,Y), then the causal effect of X on Y is identifiable and is given by the formula 
 >P(y|do(x)) = \Sum_z P(y|x,z)P(z).
 
-The backdoor criterion is one prototypical example of how to identify causal effects from observational data. However, it is a graphical criterion, i.e. it relies on knowledge of the underlying causal graph of the data generation process. The backdoor criterion might not always be immidiately applicable for a given graph, i.e. might not always find an adjustment set to deconfound a causal effect of interest. In such cases, the front-door criterion might still apply, or the use of additional covaraites (Intrumnetal variables, proxies) might be needed. A general framework for replacing causal quantities with observational ones is the do-calculus theorem.
+The backdoor criterion is one prototypical example of how to identify causal effects from observational data. However, it is a graphical criterion, i.e. it relies on knowledge of the underlying causal graph of the data generation process. The backdoor criterion might not always be immidiately applicable for a given graph, i.e. might not always find an adjustment set to deconfound a causal effect of interest. In such cases, ![the front-door criterion](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Do-Calculus/Frontdoor.md) might still apply, or the use of additional covaraites (Intrumnetal variables, proxies) might be needed. A general framework for replacing causal quantities with observational ones is the do-calculus theorem.
+
+### Further reading
 
 For more, see discussion in [Causality 2nd edition](http://bayes.cs.ucla.edu/BOOK-2K/), Section 3.3.1; [A Generalized Backdoor Criterion](https://arxiv.org/pdf/1307.5636.pdf) 
 
