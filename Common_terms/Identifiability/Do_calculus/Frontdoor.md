@@ -3,7 +3,7 @@ Frontdoor criterion
 
 ### Motivation
 
-As mentioned in [Backdoor Criterion](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Identifiability/Backdoor.md), not all causal effects for all graphs can be uncovered using the Backdoor Criterion. The Backdoor Criterion, as well as the Frontdoor criterion, formalize specific common DAGs, and suggest and immidiate graphical criterion for the estimation of a causal effect on interest, some P(Y=y|do(X=x)). The [Frontdoor criterion](https://academic.oup.com/biomet/article-abstract/82/4/669/251647) is yet another tool in our causal estimation toolbox, which allows one to extract a causal effect easily given a certain type of DAG. The archetype DAG on which the frontdoor criterion would find an adjustment set for a causal effect estimation would be the following:
+As mentioned in [Backdoor Criterion](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Identifiability/Backdoor.md), not all causal effects for all graphs can be uncovered using the Backdoor Criterion. The Backdoor Criterion, as well as the Frontdoor criterion, formalize specific common DAGs, and suggest immidiate graphical criteria for the estimation of a causal effect on interest, some P(Y=y|do(X=x)). The [Frontdoor criterion](https://academic.oup.com/biomet/article-abstract/82/4/669/251647) is yet another tool in our causal estimation toolbox, which allows one to extract a causal effect easily given a certain type of DAG. The archetype DAG on which the frontdoor criterion would find an adjustment set for a causal effect estimation would be the following:
 
 ![frontdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG.jpg)
 
@@ -31,8 +31,19 @@ And the Front-door adjustment would simpy follow the procedure we carried out ab
 
 ### Intuition and Example
 
+To see why the above might be true, let's look once again at the classic frontdoor DAG above. We can denote the joint it represents as P(X, Z, Y, U), and we would like to obtain P(Y|do(X)). If we actually carry out such intervention on X, we would end up with the following DAG, post-intervention:
 
-TODO
+![frontdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG_intervened.jpg)
+
+where the joint is denoted as P̂(X, Z, Y, U). From this new DAG, we would actually have P(Y|do(X)) = P̂(Y|X). Note, also, that we can get to P̂(Y|X) via marginalizing Z out in the following P̂(Y|X) = Σz P̂(Y|Z)P̂(Z|X).
+
+Now, observe the following:
+P̂(Y|Z) = P(Y|do(Z)),
+P̂(Z|X) = P(Z|do(X)), 
+And so 
+P(Y|do(X)) = Σz P(Y|do(Z))P(Z|do(X)) <=> P̂(Z|X) = Σz P̂(Y|Z)P̂(Z|X). 
+
+We have now shown the equivalence of these statements between the original graph and the intervened graph, which gets exactly at the intuition behind the frontdoor criterion, which levarage the mediator Z, to essentially apply the backdoor criterion twice, and get to P(Y|do(X)).
 
 ### Further Reading
 The criterion and some examples of its usefulness are included in [Pearl's Causality, 2nd Edition, Section 3.3.2-3.3.3](http://bayes.cs.ucla.edu/BOOK-2K/), as well as in [causal inference in statistics: A Primer, section 3.4](http://bayes.cs.ucla.edu/PRIMER/), and [Causal diagrams for empirical research](https://academic.oup.com/biomet/article-abstract/82/4/669/251647).
