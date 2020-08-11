@@ -33,7 +33,7 @@ And the Front-door adjustment would simpy follow the procedure we carried out ab
 
 To see why the above might be true, let's look once again at the classic frontdoor DAG above. We can denote the joint it represents as P(X, Z, Y, U), and we would like to obtain P(Y|do(X)). If we actually carry out such intervention on X, we would end up with the following DAG, post-intervention:
 
-![frontdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG_intervened.png)
+<img src="https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG_intervened.png" width="300" height="200">
 
 where the joint is denoted as P̂(X, Z, Y, U). From this new DAG, we would actually have P(Y|do(X)) = P̂(Y|X). Note, also, that we can get to P̂(Y|X) via marginalizing Z out in the following P̂(Y|X) = Σz P̂(Y|Z)P̂(Z|X).
 
