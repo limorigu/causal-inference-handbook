@@ -51,14 +51,14 @@ The Causal Dictionary
         1. [Instrumental variables (IVs)](Common_terms/Identifiability/IV.md)
         2. Diffs in Diffs
         3. Doubly robust methods
-            1. [2 step regression/IV regression](Common_terms/Identifiability/Doubly_robust.md)
+            1. [2 step regression/IV regression](Common_terms/Identifiability/Doubly_Robust.md)
         4. Negative controls
         5. Method of Moments (moment matching?)
         6. [Propensity score and matching](Common_terms/Identifiability/Propensity.md)
         7. Do-calculus
-            1. Backdoor criterion + adjustment
-            2. Frontdoor criterion + adjustment
-7. **Counterfactuals**
+            1. [Badkoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Backdoor.md)
+            2. [Frontdoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Frontdoor.md)
+
          
 8. **Philosophy of Causality**
       1. Nancy Cartwright
