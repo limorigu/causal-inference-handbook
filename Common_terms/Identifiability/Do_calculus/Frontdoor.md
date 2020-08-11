@@ -5,7 +5,7 @@ Frontdoor criterion
 
 As mentioned in [Backdoor Criterion](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Identifiability/Backdoor.md), not all causal effects for all graphs can be uncovered using the Backdoor Criterion. The Backdoor Criterion, as well as the Frontdoor Criterion, formalize specific common DAGs, and suggest immidiate graphical criteria for the estimation of a causal effect on interest, some P(Y=y|do(X=x)). The [Frontdoor criterion](https://academic.oup.com/biomet/article-abstract/82/4/669/251647) is yet another tool in our causal estimation toolbox, which allows one to extract a causal effect easily given a certain type of DAG. The archetype DAG on which the frontdoor criterion would find an adjustment set for a causal effect estimation would be the following:
 
-![frontdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG.png)
+<img src="https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG.png" width="300" height="200">
 
 Suppose X is some intervention or treatment, we are interested in its influence on an outcome Y, and U is an _unobserved_ confounder. This time, note, we also have Z, a mediator between X and Y, which will help us carry out our causal effect estimation. 
 
