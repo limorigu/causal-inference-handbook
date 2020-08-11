@@ -5,7 +5,7 @@ Frontdoor criterion
 
 As mentioned in [Backdoor Criterion](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Identifiability/Backdoor.md), not all causal effects for all graphs can be uncovered using the Backdoor Criterion. The Backdoor Criterion, as well as the Frontdoor Criterion, formalize specific common DAGs, and suggest immidiate graphical criteria for the estimation of a causal effect on interest, some P(Y=y|do(X=x)). The [Frontdoor criterion](https://academic.oup.com/biomet/article-abstract/82/4/669/251647) is yet another tool in our causal estimation toolbox, which allows one to extract a causal effect easily given a certain type of DAG. The archetype DAG on which the frontdoor criterion would find an adjustment set for a causal effect estimation would be the following:
 
-![frontdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG.jpg)
+![frontdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG.png){ width=50% }
 
 Suppose X is some intervention or treatment, we are interested in its influence on an outcome Y, and U is an _unobserved_ confounder. This time, note, we also have Z, a mediator between X and Y, which will help us carry out our causal effect estimation. 
 
@@ -33,7 +33,7 @@ And the Front-door adjustment would simpy follow the procedure we carried out ab
 
 To see why the above might be true, let's look once again at the classic frontdoor DAG above. We can denote the joint it represents as P(X, Z, Y, U), and we would like to obtain P(Y|do(X)). If we actually carry out such intervention on X, we would end up with the following DAG, post-intervention:
 
-![frontdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG_intervened.png)
+![frontdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/frontdoor_DAG_intervened.png){ width=50% }
 
 where the joint is denoted as P̂(X, Z, Y, U). From this new DAG, we would actually have P(Y|do(X)) = P̂(Y|X). Note, also, that we can get to P̂(Y|X) via marginalizing Z out in the following P̂(Y|X) = Σz P̂(Y|Z)P̂(Z|X).
 
