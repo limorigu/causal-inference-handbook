@@ -21,7 +21,7 @@ Condition (ii) gives the criterion its name: it is concerned with blocking paths
 
 Being a graphical criterion, it is most easily understood alongside a graphical, visual representation. A common toy example that shows the applicability of the criterion is the following. 
 
-![backdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/backdoor_DAG.jpg)
+![backdoor_DAG](https://github.com/limorigu/causal-inf-handbook/blob/master/img/backdoor_DAG.png)
 
 In this typical example, {X3, X4} would be a valid adjustment set, and so would {X4, X5}. Including either in the analysis would result in the blocking on the backdoor path. However, adjusting just for X4 would yield a biased estimate (because it might block the path Xi <- X4 -> Xj, but will open the currently blocked path Xj <- X3 <- X1 -> X4 <- X2 -> X5 -> Xj, since X4 is a collider on that path); similarly, adjusting for X6 would give a biased estimate because it would amount to blocking the path Xi -> X6 -> Xj, which actually constitutes what we want to measure. X6 is a mediator, i.e. part of the mechanism that facilitates the influence of Xi on Xj, and thus we should not adjust for it. 
 
