@@ -13,9 +13,10 @@ Estimation from Observational Data](https://papers.nips.cc/paper/7529-representa
 
 In a similar way to the ATE and CATE, the ITE can also be extended to continuous or categorical treatments by fixing two levels of interventions on the random variable X, x_1 and x_2:
 
+> Given three random variables X, Y and Z, where X is binary, and i is some index of an instance of interest,
 >ITE = E[Yi|do(Xi=x_1), Zi=z] - E[Yi|do(Xi=x_2), Zi=z]
 
-Once again, note that this setting usually requires some definition of treatment of interest, x_1, against some baseline treatment level, x_2, based on the specific use case.
+Once again, note that this setting usually requires some definition of treatment of interest, x_1, against some baseline treatment level, x_2, based on the specific use case. To continue with the medical treatment running example, we might want to consider x_1 and x_2 to be two different doses of the drug of interest.
 
 Intuition
 ====

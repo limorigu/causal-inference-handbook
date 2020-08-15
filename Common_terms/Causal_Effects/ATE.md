@@ -4,14 +4,14 @@ It is often the case that causal effect of interest can be stated as average-eff
 
 Definition
 ====
-> Given two random variables X and Y,
+> Given two random variables X and Y, where X is binary,
 > ATE = E[Y|do(X=1)] - E[Y|do(X=0)]
 To spell this out a little more, the ATE tells us what is the average causal effect, or difference between the average effect of taking a treatment (or carrying out an intevention setting the variable treatment to 1), vs. the average effect on not taking a treatment (and thus setting the variable treatment, via an intervention, to 0).
 
 While the common formulation of ATE considers binary treatments, such as taking or not taking a drug, it can be extended to categorical or continuous treatments as well. In such cases, we could write
 
 > ATE(x_1, x_2) = E[Y|do(X=x_2)] - E[Y|do(x_1)]
- where X is intervened at two different levels, say x_1 and x_2. Note, however, that categorical or continuous treatments ATEs require some definition of a baseline (or "control" level) to take the difference against.
+ where X is intervened at two different levels, say x_1 and x_2. Note, however, that categorical or continuous treatments ATEs require some definition of a baseline (or "control" level) to take the difference against. To continue with the medical treatment running example, we might want to consider x_1 and x_2 to be two different doses of the drug of interest.
 
 The same definition also often appears as Average Causal Effect (for example, in Peters, Janzig and Schoelkopf's elements of causal inference, see below).
 
