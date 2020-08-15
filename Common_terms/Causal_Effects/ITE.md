@@ -11,9 +11,15 @@ This definition follows the ATE and CATE formulations closely, but this time ask
 We should also mention that some works define ITE as closer to CATE, see first footnote in ![Representation Learning for Treatment Effect
 Estimation from Observational Data](https://papers.nips.cc/paper/7529-representation-learning-for-treatment-effect-estimation-from-observational-data.pdf).
 
+In a similar way to the ATE and CATE, the ITE can also be extended to continuous or categorical treatments by fixing two levels of interventions on the random variable X, x_1 and x_2:
+
+>ITE = E[Yi|do(Xi=x_1), Zi=z] - E[Yi|do(Xi=x_2), Zi=z]
+
+Once again, note that this setting usually requires some definition of treatment of interest, x_1, against some baseline treatment level, x_2, based on the specific use case.
+
 Intuition
 ====
-The intuition is simple. We would like to be able to estimate the treatment effect for a specific, say, individual person. For example, if we would like to know whether a heart transplant led to recovery for a specific person, against what would have happened to a patient if they did not recieve such a transplant (see discussion in the first reference below, in the Hernan and Robin Causal Inference book, Chapter 1.1).
+The intuition is simple. We would like to be able to estimate the treatment effect for a specific instance, say, individual person. For example, we would understandably like to know whether a heart transplant led to recovery for a specific person, against what would have happened to that patient if they did not recieve such a transplant (see discussion in the first reference below, in the Hernan and Robin Causal Inference book, Chapter 1.1).
 
 Further Reading
 ====
