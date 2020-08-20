@@ -52,6 +52,11 @@ The Causal Dictionary
         2. Diffs in Diffs
         3. Doubly robust methods
             1. [2 step regression/IV regression](Common_terms/Identifiability/Doubly_Robust.md)
+        2. Meta-learners (see if these make sense here, connect to https://github.com/uber/causalml)
+            1. S-learner
+            3. T-learner
+            3. R-learner
+            4. X-learner 
         4. Negative controls
         5. Method of Moments (moment matching?)
         6. [Propensity score and matching](Common_terms/Identifiability/Propensity.md)
