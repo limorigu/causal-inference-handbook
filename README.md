@@ -19,6 +19,8 @@ The Causal Dictionary
         2. G-formula
         3. G-Identifiably
         4. G-etc.
+    2. Interventions
+    3. [Counterfactuals](Common_terms/Counterfactuals.md)
         
 2. **Causal Discovery versus Causal Effect Estimation**
     1. What do they do?
