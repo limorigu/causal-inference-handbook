@@ -1,4 +1,4 @@
-Causal Inference Handbook
+Causal Inference Wiki
 ============================
 *A friendly introduction to causal inference*
 
@@ -19,6 +19,8 @@ The Causal Dictionary
         2. G-formula
         3. G-Identifiably
         4. G-etc.
+    2. Interventions
+    3. [Counterfactuals](Common_terms/Counterfactuals.md)
         
 2. **Causal Discovery versus Causal Effect Estimation**
     1. What do they do?
@@ -33,9 +35,10 @@ The Causal Dictionary
         1. Ignorability (weak and strong)
         2. No-unmeasured confounding
 4. **Causal Effects**
-     1. CATE
-     2. HTE
-     3. ITE
+     1. ATE 
+     2. CATE
+     3. HTE
+     4. ITE
 5. **Potential Outcomes vs. Graphical Models**
      1. Other types of causality
          1. Granger causality, Causal Impact, etc.
@@ -50,13 +53,18 @@ The Causal Dictionary
         1. [Instrumental variables (IVs)](Common_terms/Identifiability/IV.md)
         2. Diffs in Diffs
         3. Doubly robust methods
-            1. [2 step regression/IV regression](Common_terms/Identifiability/Doubly_robust.md)
+            1. [2 step regression/IV regression](Common_terms/Identifiability/Doubly_Robust.md)
+        2. Meta-learners (see if these make sense here, connect to https://github.com/uber/causalml)
+            1. S-learner
+            3. T-learner
+            3. R-learner
+            4. X-learner 
         4. Negative controls
         5. Method of Moments (moment matching?)
         6. [Propensity score and matching](Common_terms/Identifiability/Propensity.md)
         7. Do-calculus
-            1. Backdoor criterion + adjustment
-            2. Frontdoor criterion + adjustment
+            1. [Backdoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Backdoor.md)
+            2. [Frontdoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Frontdoor.md)
         8. Proxy variables
 7. **Counterfactuals**
          
@@ -84,16 +92,15 @@ Community and Recommendations
     2. _Twitter/Blogs_
         1. https://github.com/tomron/awesome-causalinference
 
-
-
 # How to contribute
 
-To be determined, requires the repo to be public.
-Suggested methods:
-- pull requests
-- raising issues
-- adding contributors
+A general format for an entry is encouraged to have the following structure:
+1. Motivation
+2. Definition
+3. Intuition (including examples and relation to other concepts)
+4. Further reading
 
+We aim for entries to provide a complete and concise introduction, with pointers to more elaborate sources.
 
 # Credit
 The Causal Inference Handbook is a joint effort by these [contributors](https://github.com/limorigu/causal-inf-handbook/graphs/contributors)
