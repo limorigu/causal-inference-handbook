@@ -31,7 +31,7 @@ The Causal Dictionary
     2. SUTVA
     3. Consistency
     4. [Compliance](Common_terms/Assumptions/Compliance.md)
-    5. [Exchangeability](Common_terms/Exchangeability.md)
+    5. [Exchangeability](Common_terms/Assumptions/exchangeability.ipynb)
         1. Ignorability (weak and strong)
         2. No-unmeasured confounding
 4. **Causal Effects**
@@ -65,7 +65,8 @@ The Causal Dictionary
         7. Do-calculus
             1. [Backdoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Backdoor.md)
             2. [Frontdoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Frontdoor.md)
-
+        8. Proxy variables
+7. **Counterfactuals**
          
 8. **Philosophy of Causality**
       1. Nancy Cartwright
