@@ -33,5 +33,5 @@ For formal theories and complete characterization of when S-recoverability exist
 Further Reading
 ====
 1. [Bareinboim et al. 2014, Recovering from Selection Bias in Causal and Statistical Inference](https://ftp.cs.ucla.edu/pub/stat_ser/r425.pdf)
-2. [Bareinboim and Pearl's inference and the data-fusion problem](https://www.pnas.org/content/113/27/7345.short) which considers (sample) selection bias and general strategies to address it. See the section headed "Sample Selection Bias".
+2. [Bareinboim and Pearl's inference and the data-fusion problem](https://www.pnas.org/content/113/27/7345.short) which considers (sample) selection bias and general strategies to address it. See the section headed "Sample Selection Bias"
 3. [Wikipedia's Selection Bias entry](https://en.wikipedia.org/wiki/Selection_bias)
