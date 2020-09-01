@@ -78,7 +78,7 @@ Table of Contents
           
 Community and Recommendations
 ===============
-1. [**Suggested readings**](https://github.com/limorigu/causal-inf-handbook/blob/master/Suggested_Readings.md)
+1. [**Suggested readings**]
     1. [_Textbooks_](https://github.com/limorigu/causal-inf-handbook/blob/master/Suggested_Readings/Textbooks.md)
     2. _Twitter/Blogs_
         
