@@ -48,11 +48,11 @@ Table of Contents
      <!---1. What does it mean?
      2. How is it used differently?
      3. Does it always refer to causal parameters/claims or sometimes as well to “normal parameters”?--->
-     4. Challenges to identifiability: sources of bias
+     1. Challenges to identifiability: sources of bias
         1. Confounding
         2. (Sample) Selection Bias
         <!---(Common_terms/Identifiability/Bias/Selection_bias.md)--->
-     5. Common methods for identification
+     2. Common methods for identification
         1. Instrumental variables (IVs)
         <!---(Common_terms/Identifiability/IV.md)--->
         2. Diffs in Diffs
