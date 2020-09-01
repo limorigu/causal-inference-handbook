@@ -36,7 +36,7 @@ Table of Contents
     5. [Exchangeability](Common_terms/Assumptions/exchangeability.ipynb)
         1. Ignorability (weak and strong)
         2. No-unmeasured confounding
-4. **Causal Effects**
+4. **Types of Causal Effects**
      1. ATE 
      2. CATE
      3. HTE
@@ -44,10 +44,10 @@ Table of Contents
 5. **Potential Outcomes vs. Graphical Models**
      1. Other types of causality
          1. Granger causality, Causal Impact, etc.
-6. **Identifiability**
-     1. What does it mean?
+6. **(Causal Effects) Identifiability**
+     <!---1. What does it mean?
      2. How is it used differently?
-     3. Does it always refer to causal parameters/claims or sometimes as well to “normal parameters”?
+     3. Does it always refer to causal parameters/claims or sometimes as well to “normal parameters”?--->
      4. Challenges to identifiability: sources of bias
         1. Confounding
         2. (Sample) Selection Bias
