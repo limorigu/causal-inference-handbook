@@ -39,7 +39,7 @@ The Causal Dictionary
      2. CATE
      3. HTE
      4. ITE
-     5. [Bounds on causal effects](Common_terms/CausalBounds)
+     5. [Bounds on causal effects](Common_terms/CausalBounds.ipynb)
 5. **Potential Outcomes vs. Graphical Models**
      1. Other types of causality
          1. Granger causality, Causal Impact, etc.
