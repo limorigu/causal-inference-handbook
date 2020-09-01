@@ -28,7 +28,7 @@ Table of Contents
 3. **Common Assumptions**
     1. Positivity
     <!---(Common_terms/Assumptions/Positivity.md)--->
-        1. Overlap
+        <!---1. Overlap--->
     2. SUTVA
     3. Consistency
     4. Compliance
