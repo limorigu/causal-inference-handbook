@@ -2,16 +2,15 @@ Causal Inference Wiki
 ============================
 *A friendly introduction to causal inference*
 
-<!-- # How to read
-Head over to the [Wiki section](https://github.com/limorigu/causal-inf-handbook/wiki) for all entires on fundamentals of causal inference! -->
-
-## Welcome to the causal inference handbook wiki!
+![The ultimate question](https://github.com/limorigu/causal-inf-handbook/blob/master/img/Chick-and-Egg.jpg)
 
 This is meant to be a resource for causal-curious folks who are looking for accessible introduction to common topics in causal inference. 
 
-![The ultimate question](https://github.com/limorigu/causal-inf-handbook/blob/master/img/Chick-and-Egg.jpg)
+* _We do not aim_ at replacing Wikipedia, or any of the [excellent textbooks](https://github.com/limorigu/causal-inf-handbook/blob/master/Suggested_Readings/Textbooks.md) already out there on the topic.
 
-The Causal Dictionary
+* _We do aim_ to include quick references to common topics of interest, and grow naturally with community's needs, expertise and interests. We hope to make this a collaborative project, so please get in touch if you'd like to make a contribution, or jump on it and create an issue or pull request.
+
+Table of Contents
 ===============
 1. **Common Terms (Terminology)**
     1. _G-something_
@@ -79,18 +78,15 @@ The Causal Dictionary
           
 Community and Recommendations
 ===============
-1. [**Jobs and Opportunities**](https://github.com/limorigu/causal-inf-handbook/blob/master/Jobs-and-Opportunities/Jobs-and-Opportunities.md)
-    1. _Industry_
-    2. _Academia_
-        1. Quantum Causal Inference, see UAI mailer
+1. [**Suggested readings**](https://github.com/limorigu/causal-inf-handbook/blob/master/Suggested_Readings.md)
+    1. [_Textbooks_](https://github.com/limorigu/causal-inf-handbook/blob/master/Suggested_Readings/Textbooks.md)
+    2. _Twitter/Blogs_
         
 2. **Software**
     1. _Packages etc._
+        1. [awesome-causalinference](https://github.com/tomron/awesome-causalinference)
+        2. [Uber's Causal ML](https://github.com/uber/causalml)
     
-3. **Suggested readings**
-    1. _Textbooks_
-    2. _Twitter/Blogs_
-        1. https://github.com/tomron/awesome-causalinference
 
 # How to contribute
 
