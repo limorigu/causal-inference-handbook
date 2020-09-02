@@ -1,5 +1,3 @@
-demi
-=======
 Causal Inference Wiki
 ============================
 *A friendly introduction to causal inference*
