@@ -12,13 +12,13 @@ It is easiest to start with a quote from Hernan and Robin's book and explain it 
 
 >IP weighting, standardization, and g-estimation are often collectively referred to as g-methods because they are designed for application to generalized treatment contrasts involving treatments that vary over time. The application of g-methods to treatments that do not vary over time in Part II of this book may then be overkill since there are alternative, simpler approaches. However, by presenting g-methods in a relatively simple setting, we can focus on their main features while avoiding the more complex issues described in Part III. (Introduction paragraph, Chapter 14)
 
-We can see that __G-methods__ is a group of methods that include IP weighting, standardization and g-estimation. They are referred to as G-methods, as they are designed for __generalized__ treatment constrats involving treatments varying over time. This refers to two different types of causal inferences studies: 
+We can see that __G-methods__ is a group of methods that include IP weighting, standardization and g-estimation. They are referred to as G-methods, as they are designed for __generalized__ treatment constrasts involving treatments varying over time. This refers to two different types of causal inference studies: 
 * A one-off/one-shot study where we analyse one snapshot of time
 * A time-varying study, where we look at data collected at different points in time, for example an AIDS drug applied every month for a year, i.e. 12 time slices. 
 
 The G-methods are specialised for studies with multiple time steps. They can be applied to studies looking at a single point in time, but there are simpled methods to do that. 
 
-A further defintion can be found in (Hernan, 2020, Section 7.6):
+A further defintion can be found in [(Hernan, 2020, Section 7.6)](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/):
 
 Here, methods are separated into
 1. model free/  non-parametric:
@@ -29,14 +29,14 @@ Here, methods are separated into
 * parametric g-formula
 * g-estimation of nested structural models
 
-In that section, G-methods are constrasted with 'Stratification-based methods':
+In that section, G-methods are contrasted with 'Stratification-based methods':
 
 >G-methods simulate the A-Y association in the population if backdoor paths involving the measured variables L did not exist. For example, IP weighting achieves this by creating a pseudo-population in which treatment A is independent of the measured confounders L that is, by “deleting” the arrow from L to A. In contrast, stratification-based methods do not delete the arrow from L to A but rather compute the conditional effect in a subset of the observed population, which is represented by adding a selection box. The advantage of “deleting” the arrow from confounders L to treatment A will become apparent when we discuss time-varying treatments in Part III
 
-Here, A is the treatment (more often denoted by X), L are the confounders (more often denoted by U or C). Importantly, 'deleting the arrow from L to A' is seen better for dealing with time-varying treatments, i.e. G-methods are generally better for time-varying studies compared to startification-based methods.
+Here, A is the treatment (more often denoted by X), L are the confounders (more often denoted by U or C). Importantly, 'deleting the arrow from L to A' is seen better for dealing with time-varying treatments, i.e. G-methods are generally better for time-varying studies compared to startification-based methods. See the entry on [Confounding](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Identifiability/Bias/Confounding.md) for an explanation on 'deleting the arrow from A to L'.
 
 ## Further Reading
 
-Hernan and Robin's, 2020: "What if?" Section 7.6 and beginning of Chapter 14. 
+Hernan and Robin's, 2020: "What if?" Section 7.6 and beginning of Chapter 14, [here](https://www.hsph.harvard.edu/miguel-hernan/causal-inference-book/)
 
 
