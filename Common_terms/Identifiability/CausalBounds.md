@@ -19,7 +19,7 @@ These bounds are not to be confused with confidence intervals, which make a stat
 Definition
 ==========
 
-Commonly, causal bounds are calculated via introducing so called _response function variables_ (RFVs). Response function formulations have a simple and intutive explanation via the Instrumental Variable model, in the context of imperfect compliance, see the *Intuition: Causal Bounds with imperfect compliance via the insturmental variable model*.
+Commonly, causal bounds are calculated via introducing so called _response function variables_ (RFVs). Response function formulations have a simple and intutive explanation via the Instrumental Variable model, in the context of imperfect compliance, see the **Intuition: Causal Bounds with imperfect compliance via the insturmental variable model**.
 
 Put succinctly, the RFVs are then used to parameterize the causal model in a more 'granular' or 'fine' way, taking into account the different possibles response of a variable to its ancestors. This yields a linear program, for which, then the objective, representing the causal effect of interest, is optimized for its maximum and minimum value, i.e. the upper and lower bound of the causal effect.
 
@@ -41,9 +41,9 @@ U_V can be any variable of any type, with and any domain size. f_V can be any fu
 
 As described in the subsection on Intuition, for each value of U_V, the functional mapping from PA_V to V is a definite deterministic response function, such as denying a prescription or any of the other three. Therefore, each value of U_V can be associated with a unique functional response.
 
-*Consequence:* Despite a potentially infinite domain size of U_V, the number of deterministic response functions is predefined by the domain sizes of PA_V and V itself. That is, there is a limited number of ways the variable V can react to its parents, such that we can fully enumerate them, i.e. make a complete list of them.
+**Consequence:** Despite a potentially infinite domain size of U_V, the number of deterministic response functions is predefined by the domain sizes of PA_V and V itself. That is, there is a limited number of ways the variable V can react to its parents, such that we can fully enumerate them, i.e. make a complete list of them.
 
-*The response function variable is defined as:*
+**The response function variable is defined as:**
 
 R_V = {0, ..., N_V -1}
 
@@ -51,7 +51,7 @@ N_V = |V|^|PA_V| is the absolute number of response function states that map all
 
 A specific value r_V of R_V then represents a specific response of V to its inputs. The trick is to now relate the causal model with these response functions.
 
-*Expressing P(V) as a linear function of P(R)*
+**Expressing P(V) as a linear function of P(R)**
 
 P(V) = Σ_r P(r) ∏_{v ∈ V} I(v; pa_V, r_V)
 
@@ -69,7 +69,7 @@ Often, the bounds will include 0, such that the effect of interest could be nega
 
 Importantly, these bounds are completely free from assumptions. Adding further assumptions will tigthen the bounds, and often start to exclude 0, i.e. the bounds become informative by giving a range that is exclusively positive or negative. For example, assuming Monotonicty, i.e. that there are no defiers, can signifcantly increases the usefulness of the bounds. Bounds calculated with monotonicity obviously are then based on the assumption of no defiers, which often is hard to verify.
 
-Response function variables are not the only way to calculate causal bounds. Ramsahai describes in this PhD Thesis a way of calculating bounds without the use of response functions, see *Further Reading*. In his own words: "It has been shown that the bounds exist by direct use of the properties of probability distributions, without relying on the additional assumptions associated with potential outcomes"
+Response function variables are not the only way to calculate causal bounds. Ramsahai describes in this PhD Thesis a way of calculating bounds without the use of response functions, see **Further Reading**. In his own words: "It has been shown that the bounds exist by direct use of the properties of probability distributions, without relying on the additional assumptions associated with potential outcomes"
 
 Intuition
 =========
@@ -102,9 +102,9 @@ Y = g(X, U), i.e. outcome of aspirin treatment is influenced by taking aspring (
 
 A variable is considered an IV if it fulfills the following conditions:
 
-1. *Unconfounded Instrument:* Z is independent from confounders (measured and unmeasured) U
-2. *Relevance:* Z has information on X
-3. *Exclusion (of the IV as part of all variables influencing Y):* Given X and U, Y is independent of Z
+1. **Unconfounded Instrument:** Z is independent from confounders (measured and unmeasured) U
+2. **Relevance:** Z has information on X
+3. **Exclusion (of the IV as part of all variables influencing Y):** Given X and U, Y is independent of Z
 
 **Intution:** The treatment X is confounded with the outcome Y, so calculating the effect from X on Y will be biased by the confounders.
 * What if we had an additional variable, let us call it Z, that has information on X, i.e. a variable that moves together with it, BUT is not confounded with Y?
@@ -117,32 +117,32 @@ Summing up: Z needs to have information on X (Relevance), not be confounded with
 ### Causal BOUNDS with imperfect compliance via the insturmental variable model
 So, how does the IV model applied to the problem of imperfect compliance relate to causal bounds?
 
-*Reminder:*
+**Reminder:**
 The doctors prescribes aspiring (Z=1) or not (Z=0).
 The patients ends up taking the aspiring (X=1) or not (X=0).
-We can separate the possible type of responses of patients into *4 groups:*
+We can separate the possible type of responses of patients into **4 groups:**
 
 ![response_table](https://github.com/limorigu/causal-inf-handbook/blob/master/img/response_table.png)
 
-*In words:*
+**In words:**
 Always Deniers never take aspirin, under any circumstances, with or without prescription, i.e. X=0 ('hardcoded')
 Compliers always follow the prescription of the doctor, i.e. X=Z
 Defiers always defy the prescription of the doctor, always do the opposite i.e. X=!Z (=1-Z)
 Always Takers always take aspiring, regardless of the prescription, i.e. X=1
 Hence, the problem of patients not abiding to prescription is called the problem of imperfect compliance, as some of the patients fall out of the group of compliers into any of the other three. While Always Deniers are not a problem if they were not given a prescription, as they behave as the doctor prescribed, our calculation of a causal of effect of taking aspirin (X) onto the outcome of reducing headaches (Y) will always be biased by patients that are Defiers.
 
-_Core point:_ These four groups of patients give us a exhaustive and complete list of all possible reactions of patients to their prescription Z. Which group they fall in, is influenced by the confounders U. For example, scientific scepticism might lead a patient to Always Deny. Therefore, if the confounder U determines which of the four groups a patient falls in, we can separate U into 4 regions, where each region indicates which group a patient is in. That is, we can replace U with a variable R, that has 4 states (0,1,2,3 for the four groups) which indicate how the patient should *respond* to the value of Z, i.e. with what kind of *function* the patient shall process the prescription. This variable R, representing the influence of U, is called a *response function variable*.
+**Core point:** These four groups of patients give us a exhaustive and complete list of all possible reactions of patients to their prescription Z. Which group they fall in, is influenced by the confounders U. For example, scientific scepticism might lead a patient to Always Deny. Therefore, if the confounder U determines which of the four groups a patient falls in, we can separate U into 4 regions, where each region indicates which group a patient is in. That is, we can replace U with a variable R, that has 4 states (0,1,2,3 for the four groups) which indicate how the patient should *respond* to the value of Z, i.e. with what kind of *function* the patient shall process the prescription. This variable R, representing the influence of U, is called a *response function variable*.
 
 <!---The section on the Definition above will explain the remaining parts for calculating the bounds.--->
 
 Further reading
 ===============
-1. *Overview:* This post by Pearl from April 2020 has a nice interactive graph that visualises bounds: [Which Patients are in Greater Need: A counterfactual analysis with reflections on COVID-19](http://causality.cs.ucla.edu/blog/index.php/2020/04/02/which-patients-are-in-greater-need-a-counterfactual-analysis-with-reflections-on-covid-19/)
+1. **Overview:** This post by Pearl from April 2020 has a nice interactive graph that visualises bounds: [Which Patients are in Greater Need: A counterfactual analysis with reflections on COVID-19](http://causality.cs.ucla.edu/blog/index.php/2020/04/02/which-patients-are-in-greater-need-a-counterfactual-analysis-with-reflections-on-covid-19/)
 
-2. *Start:* The original paper on causal bounds via response function variables is [Alexander Balke and Judea Pearl. Counterfactual probabilities: Computational methods, bounds and applications.](https://arxiv.org/abs/1302.6784)
+2. **Start:** The original paper on causal bounds via response function variables is [Alexander Balke and Judea Pearl. Counterfactual probabilities: Computational methods, bounds and applications.](https://arxiv.org/abs/1302.6784)
 
     1. Another one is Bounds on Treatment Effects from Studies with Imperfect Compliance and should definitely be read if you are more deeper interest.
 
-3. *A summary:* Wu et al. 2019 present a very nice exposition of causal bounds, via the application to fairness: [PC-Fairness: A Unified Framework for Measuring Causality-based Fairness](https://arxiv.org/abs/1910.12586)
+3. **A summary:** Wu et al. 2019 present a very nice exposition of causal bounds, via the application to fairness: [PC-Fairness: A Unified Framework for Measuring Causality-based Fairness](https://arxiv.org/abs/1910.12586)
 
-4. *An alternative response function free formulation:* [Ronald Ramsahai Causal bounds and instruments](https://ora.ox.ac.uk/objects/uuid:e0c52783-3f19-4aa9-b101-5e22a4527e9d)
+4. **An alternative response function free formulation:** [Ronald Ramsahai Causal bounds and instruments](https://ora.ox.ac.uk/objects/uuid:e0c52783-3f19-4aa9-b101-5e22a4527e9d)
