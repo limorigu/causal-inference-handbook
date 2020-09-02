@@ -1,3 +1,0 @@
-Recommended readings
-
-***
