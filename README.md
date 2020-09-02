@@ -1,3 +1,5 @@
+demi
+=======
 Causal Inference Wiki
 ============================
 *A friendly introduction to causal inference*
@@ -108,5 +110,4 @@ We aim for entries to provide a complete and concise introduction, with pointers
 
 # Credit
 The Causal Inference Handbook is a joint effort by these [contributors](https://github.com/limorigu/causal-inf-handbook/graphs/contributors)
-
 
