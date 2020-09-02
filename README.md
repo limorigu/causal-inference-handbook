@@ -37,10 +37,10 @@ Table of Contents
         1. Ignorability (weak and strong)
         2. No-unmeasured confounding
 4. **Types of Causal Effects**
-     1. ATE 
-     2. CATE
-     3. HTE
-     4. ITE
+     1. [ATE](Common_terms/Causal_Effects/ATE.md) 
+     2. [CATE](Common_terms/Causal_Effects/CATE.md)
+     <!---3. [HTE](Common_terms/Causal_Effects/CATE.md)--->
+     4. [ITE](Common_terms/Causal_Effects/ITE.md)
      5. [Bounds on causal effects](Common_terms/Identifiability/CausalBounds.md)
 5. **Potential Outcomes vs. Graphical Models**
      1. Other types of causality
@@ -50,9 +50,8 @@ Table of Contents
      2. How is it used differently?
      3. Does it always refer to causal parameters/claims or sometimes as well to “normal parameters”?--->
      1. Challenges to identifiability: sources of bias
-        1. Confounding
-        2. (Sample) Selection Bias
-        <!---(Common_terms/Identifiability/Bias/Selection_bias.md)--->
+        1. [Confounding](Common_terms/Identifiability/Confounding)
+        2. (Sample) Selection Bias(Common_terms/Identifiability/Bias/Selection_bias.md)
      2. Common methods for identification
         1. Instrumental variables (IVs)
         <!---(Common_terms/Identifiability/IV.md)--->
@@ -72,6 +71,7 @@ Table of Contents
         7. Do-calculus
             1. [Backdoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Backdoor.md)
             2. [Frontdoor criterion + adjustment](Common_terms/Identifiability/Do_calculus/Frontdoor.md)
+            3. [d-separation](Common_terms/Identifiability/Do_calculus/d-separation.md)
         8. Proxy variables
 7. **Counterfactuals**
          
