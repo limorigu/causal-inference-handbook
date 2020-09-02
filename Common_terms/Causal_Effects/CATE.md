@@ -1,6 +1,7 @@
 Motivation
 ====
-ATE is not always enough to describe a causal effect of interest. For example, if we want to assess the efficacy of a drug in eliviating a certain medical condition, we might not just be interested in an *average* treatment effect, but rather in a treatment effect on a *specific group of interest*, for example, on women, rather than on the population as a whole. CATE can thus help us estimate such effects. We still look at an average treatment effect in the sense that we look at the expectation, but we now also condition on some additional covariate of interest, such as gender.
+
+The [ATE](Common_terms/Causal_Effects/ATE.md) is sometimes not enough to calculate a causal effect to answer a question of interest. For example, if we ask the question: "Does this new cancer drug work better for women, than for men?", the average treatment effect will not be helpful. Instead, we need a treatment effect on a specific group of interest, for example, the causal effect on women vs. the causal effect on men. The Conditional Average Treatment Effect (CATE) can help us estimate causal effects to answer group specific questions. We are still looking at an average treatment effect in the sense of looking at an expectation across a variable, but we now also condition on an additional covariate of interest, such as gender.
 
 Definition
 ====

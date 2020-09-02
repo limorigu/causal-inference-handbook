@@ -9,11 +9,28 @@ Introduction: confounders, mediators and colliders
 =================================================
 The fundamental building blocks of a causal graph, decribing every possible relationship between any three related variables, are the following:
 
-Confounders (also related to the [Reichenbach's common cause principle, see principle 1.1 in Elements of Causal Inference](https://mitpress.mit.edu/books/elements-causal-inference#:~:text=Elements%20of%20Causal%20Inference%20is,data%20to%20understand%20the%20world.)): variables which are common causes of two others, i.e. for some random variables X, Y, Z, X <- Z -> Y. Confounders imply dependence between X and Y, X¬⫫Y, and yet conditional independence given Z, X⫫Y|Z. In some sources, this conditional indepepndence of the children X and Y given the common cuase parent Z is described as Z "screening off" X and Y from each other. Confounders are the main threats behind [Confounding Bias](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Bias/Confounding.md), and a common example can be if we try to explain the relationship between ice cream consumption (X) and number of death cases caused by drowning in pools (Y). While X and Y can show positive correlation, it is likely that the two have a lurking common cause behind both, hot weather (Z). As such, it is likely that we have the following structure Ice_creatm_consumption (X) <- hot_weather (Z) -> death_cases_in_pools (Y).
+1. *Confounders:* These are variables which are common causes of two others, i.e. for some random variables X, Y, Z, X <- Z -> Y. Confounders imply both a) dependence between X and Y, X¬⫫Y, and b)conditional independence given Z, X⫫Y|Z. Alternatively, some sources refer to this conditional indepepndence of X and Y (the children) given the common cuase Z (the parent) as Z "screening off" X and Y from each other. 
 
-2. Mediators: variables in the causal graph that can thought of as the mechanism describing a relationship between two, more remotely associated variables, i.e. X -> Z -> Y. An example could be the process by which taking a medication might lead to some outcome, like reducing a headache. While a pill can indeed help us reduce headaches, it is through the chemical reaction the pill triggers that the headache is reduced, i.e. medication (X) -> chemical_recation (Z) -> Y. While Z again renders X and Y dependent, X¬⫫Y, conditioned on Z, the mechism, we once again loose the association between X and Y, i.e. X⫫Y|Z.
+    Confounders are the main threats behind [Confounding Bias](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Bias/Confounding.md), and a common example can be if we try to explain the relationship between ice cream consumption (X) and number of death cases caused by drowning in pools (Y). While X and Y can show positive correlation, it is likely that the two have a lurking common cause behind both, hot weather (Z). As such, it is likely that we have the following structure 
+    > Ice_creatm_consumption (X) <- hot_weather (Z) -> death_cases_in_pools (Y).
 
-3. Colliders: when two seemingly unrelated phenomena, represented by random variables, are related by relationship to a third one, we see colliders (also called a v-structure or immorality, with a slight traditional family moralistic undertone, derived from the fact we are looking at a child node from two parent nodes which are not themselves adjacent). In other words, we look at a case where both some X and Y point at a Z, X -> Z <- Y. A common examle might be a study that aims to look at the occurance of two diseases, say cancer (X) and tuberculosis (Y). While the two might not be correlated in the general population, if we relate them by performing the study at a particular hospital (Z), we could be linking the two -- making them seem negatively associated when we condition on presence in hospital Z. Following this logic, we see that in this case, unlike the two previous ones, cancer (X) and tuberculosis (Y) might be marginally indepepndent, X⫫Y, and yet become dependent when conditioning on hospital presence (Z), X¬⫫Y|Z. This example is what constitutes [Berkson's paradox](https://en.wikipedia.org/wiki/Berkson%27s_paradox#:~:text=Berkson's%20paradox%20occurs%20when%20this,absent%20are%20not%20equally%20observed.).
+   (Confounders are related to the Reichenbach's common cause principle, see principle 1.1 in Elements of Causal Inference)
+
+2. *Mediators:* variables in the causal graph that can thought of as the mechanism describing a relationship between two, more remotely associated variables, i.e. 
+
+    > X -> Z -> Y (treatment -> mediator -> outcome). 
+
+    For example, a mediator could represent the process by which taking aspirin alleviates headaches. While taking an aspirin pill is know to reduce headaches, it is not the pill itself, but the multiple chemical reactions of the contents of the pill that reduce the headache, i.e.
+
+    > medication (X) -> chemical_recation (Z) -> Y.
+
+    While Z again renders X and Y dependent, X¬⫫Y, conditioned on Z, i.e. the mechanism, we once again lose the association between X and Y, i.e. X⫫Y|Z.
+
+3. *Colliders:* when two seemingly unrelated phenomena, represented by random variables, are related by a relationship to a third one, we see colliders. This phenomenon si also referred to as v-structure or immorality[¹], with a slight traditional family moralistic undertone, derived from the fact we are looking at a child node from two parent nodes which are not themselves adjacent). In other words, we look at a case where both some X and Y point at a third variable Z, 
+
+    > X -> Z <- Y. 
+
+    For example, a study might look at the occurrence of two diseases, say cancer (X) and tuberculosis (Y). While the two might not be correlated in the general population, if we relate them by performing the study at a particular hospital (Z), we could be linking the two -- making them seem negatively associated when we condition on presence in hospital Z. Following this logic, we see that in this case, unlike with confounders or mediators, cancer (X) and tuberculosis (Y) might be marginally independent, X⫫Y, and yet become dependent when conditioning on hospital presence (Z), X¬⫫Y|Z. This example is also described as [Berkson's paradox](https://en.wikipedia.org/wiki/Berkson%27s_paradox#:~:text=Berkson's%20paradox%20occurs%20when%20this,absent%20are%20not%20equally%20observed.).
 
 Putting it all together: d-separation
 =====================================
@@ -38,3 +55,6 @@ Further Reading
 3. [Pieter Abbeel's d-separation video for Bayesian nets](https://www.youtube.com/watch?v=yDs_q6jKHb0)
 4. d-seperation, chpater 2.4 in [causal inference in statistics: A Primer](http://bayes.cs.ucla.edu/PRIMER/)
 5. For a slightly different flavour, see [Elements of Causal Inference, chapter 6, definition 6.1](https://mitpress.mit.edu/books/elements-causal-inference#:~:text=Elements%20of%20Causal%20Inference%20is,data%20to%20understand%20the%20world.)
+
+#### 1 While we do not personally subscribe to this view, the term immorality was chosen because in this case, two parent nodes will be non-adjacent (i.e. won't share an edge), and yet will have a shared child node.
+[¹]:#-note-one
