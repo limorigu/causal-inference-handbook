@@ -23,9 +23,19 @@ In general, applying for a PhD is a complex endavour, but your primary goal shou
 - UCL: Matt Kusner, Ricardo Silva
 - Carnegie Melon University
 
-### Open Calls
+### Recent PhD Jobs
 
-There currently are no open calls for PhD positions.
+#### Climate Change
+Looking for a PhD on developing machine learning / causal inference methods for climate research? Two open positions within @EU_H2020 training programme @iMIRACLI_ITN 
+
+https://dlr.de/dlr/jobs/en/desktopdefault.aspx/tabid-10596/1003_read-42687/ 
+
+and 
+
+https://dlr.de/dlr/jobs/en/desktopdefault.aspx/tabid-10596/1003_read-42688/
+
+
+
 
 ## Post-doctoral
 
