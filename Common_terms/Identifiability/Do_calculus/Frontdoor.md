@@ -48,6 +48,6 @@ We have now shown the equivalence of these statements between the original graph
 ### Further Reading
 The criterion and some examples of its usefulness are included in [Pearl's Causality, 2nd Edition, Section 3.3.2-3.3.3](http://bayes.cs.ucla.edu/BOOK-2K/), as well as in [causal inference in statistics: A Primer, section 3.4](http://bayes.cs.ucla.edu/PRIMER/), and [Causal diagrams for empirical research](https://academic.oup.com/biomet/article-abstract/82/4/669/251647).
 
-For the general framework for the identification of causal effects, i.e. measuring the effects of interventions, see Pearl's Causality, 2nd Edition, Section 3.4](http://bayes.cs.ucla.edu/BOOK-2K/).
+For the general framework for the identification of causal effects, i.e. measuring the effects of interventions, see [Pearl's Causality, 2nd Edition, Section 3.4](http://bayes.cs.ucla.edu/BOOK-2K/).
 
 
