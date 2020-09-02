@@ -22,8 +22,7 @@ Table of Contents
     3. Counterfactuals
     <!---(Common_terms/Counterfactuals.md)--->
         
-2. **Causal Discovery versus Causal Effect Estimation**
-    1. What do they do?
+2. **Causal Discovery **
     
 3. **Common Assumptions**
     1. Positivity
