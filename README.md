@@ -22,7 +22,7 @@ Table of Contents
     3. Counterfactuals
     <!---(Common_terms/Counterfactuals.md)--->
         
-2. **Causal Discovery **
+2. **Causal Discovery**
     
 3. **Common Assumptions**
     1. Positivity
