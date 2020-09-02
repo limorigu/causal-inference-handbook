@@ -14,7 +14,7 @@ This is meant to be a resource for causal-curious folks who are looking for acce
 The Causal Dictionary
 ===============
 1. **Common Terms (Terminology)**
-    1. _G-something_
+    1. [_G-something terms_ (Overview)](Common_terms/G_something.md)
         1. G-estimation
         2. G-formula
         3. G-Identifiably
