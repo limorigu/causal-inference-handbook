@@ -122,7 +122,7 @@ The doctors prescribes aspiring (Z=1) or not (Z=0).
 The patients ends up taking the aspiring (X=1) or not (X=0).
 We can separate the possible type of responses of patients into *4 groups:*
 
-![response_table](https://github.com/limorigu/causal-inf-handbook/blob/JZ_bounds/img/response_table.png)
+![response_table](https://github.com/limorigu/causal-inf-handbook/blob/master/img/response_table.png)
 
 *In words:*
 Always Deniers never take aspirin, under any circumstances, with or without prescription, i.e. X=0 ('hardcoded')
