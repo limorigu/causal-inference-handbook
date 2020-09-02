@@ -59,7 +59,7 @@ Table of Contents
         3. Doubly robust methods
             1. 2 step regression/IV regression
             <!---(Common_terms/Identifiability/Doubly_Robust.md)--->
-        2. Meta-learners (see if these make sense here, connect to https://github.com/uber/causalml)
+        2. Meta-learners
             1. S-learner
             3. T-learner
             3. R-learner
