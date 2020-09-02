@@ -9,14 +9,14 @@ Introduction: confounders, mediators and colliders
 =================================================
 The fundamental building blocks of a causal graph, decribing every possible relationship between any three related variables, are the following:
 
-1. *Confounders:* These are variables which are common causes of two others, i.e. for some random variables X, Y, Z, X <- Z -> Y. Confounders imply both a) dependence between X and Y, X¬⫫Y, and b)conditional independence given Z, X⫫Y|Z. Alternatively, some sources refer to this conditional indepepndence of X and Y (the children) given the common cuase Z (the parent) as Z "screening off" X and Y from each other. 
+1. **Confounders:** These are variables which are common causes of two others, i.e. for some random variables X, Y, Z, X <- Z -> Y. Confounders imply both a) dependence between X and Y, X¬⫫Y, and b)conditional independence given Z, X⫫Y|Z. Alternatively, some sources refer to this conditional indepepndence of X and Y (the children) given the common cuase Z (the parent) as Z "screening off" X and Y from each other. 
 
     Confounders are the main threats behind [Confounding Bias](https://github.com/limorigu/causal-inf-handbook/blob/master/Common_terms/Bias/Confounding.md), and a common example can be if we try to explain the relationship between ice cream consumption (X) and number of death cases caused by drowning in pools (Y). While X and Y can show positive correlation, it is likely that the two have a lurking common cause behind both, hot weather (Z). As such, it is likely that we have the following structure 
     > Ice_creatm_consumption (X) <- hot_weather (Z) -> death_cases_in_pools (Y).
 
    (Confounders are related to the Reichenbach's common cause principle, see principle 1.1 in Elements of Causal Inference)
 
-2. *Mediators:* variables in the causal graph that can thought of as the mechanism describing a relationship between two, more remotely associated variables, i.e. 
+2. **Mediators:** variables in the causal graph that can thought of as the mechanism describing a relationship between two, more remotely associated variables, i.e. 
 
     > X -> Z -> Y (treatment -> mediator -> outcome). 
 
@@ -26,7 +26,7 @@ The fundamental building blocks of a causal graph, decribing every possible rela
 
     While Z again renders X and Y dependent, X¬⫫Y, conditioned on Z, i.e. the mechanism, we once again lose the association between X and Y, i.e. X⫫Y|Z.
 
-3. *Colliders:* when two seemingly unrelated phenomena, represented by random variables, are related by a relationship to a third one, we see colliders. This phenomenon si also referred to as v-structure or immorality[¹], with a slight traditional family moralistic undertone, derived from the fact we are looking at a child node from two parent nodes which are not themselves adjacent). In other words, we look at a case where both some X and Y point at a third variable Z, 
+3. **Colliders:** when two seemingly unrelated phenomena, represented by random variables, are related by a relationship to a third one, we see colliders. This phenomenon si also referred to as v-structure or immorality[¹], with a slight traditional family moralistic undertone, derived from the fact we are looking at a child node from two parent nodes which are not themselves adjacent). In other words, we look at a case where both some X and Y point at a third variable Z, 
 
     > X -> Z <- Y. 
 
@@ -56,5 +56,5 @@ Further Reading
 4. d-seperation, chpater 2.4 in [causal inference in statistics: A Primer](http://bayes.cs.ucla.edu/PRIMER/)
 5. For a slightly different flavour, see [Elements of Causal Inference, chapter 6, definition 6.1](https://mitpress.mit.edu/books/elements-causal-inference#:~:text=Elements%20of%20Causal%20Inference%20is,data%20to%20understand%20the%20world.)
 
-#### 1 While we do not personally subscribe to this view, the term immorality was chosen because in this case, two parent nodes will be non-adjacent (i.e. won't share an edge), and yet will have a shared child node.
+##### ¹ While we do not personally subscribe to this view, the term immorality was chosen because in this case, two parent nodes will be non-adjacent (i.e. won't share an edge), and yet will have a shared child node.
 [¹]:#-note-one
