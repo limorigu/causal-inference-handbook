@@ -2,6 +2,8 @@ Causal Inference Wiki
 ============================
 *A friendly introduction to causal inference*
 
+**DISCLAIMER: this is an alpha-version of this project. We hope to make it grow in quality and quantity as more people get involved. If interested, please reach out!**
+
 ![The ultimate question](https://github.com/limorigu/causal-inf-handbook/blob/master/img/Chick-and-Egg.jpg)
 
 This is meant to be a resource for causal-curious folks who are looking for accessible introduction to common topics in causal inference. 
